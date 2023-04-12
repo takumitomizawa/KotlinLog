@@ -16,8 +16,11 @@ class MainActivity : AppCompatActivity() {
         dog.move()
         */
 
-        val human = Human("富澤", 22) // 名前を富澤、年齢は22歳で、Humanのインスタンスを作る
+        val human = Human("富澤", 22,"麻雀") // 名前を富澤、年齢は22歳で、Humanのインスタンスを作る
         human.say()
         human.think()
+        val human2 = Human("山田太郎",10, "サッカー")
+        human2.say()
+        human2.think()
     }
 }

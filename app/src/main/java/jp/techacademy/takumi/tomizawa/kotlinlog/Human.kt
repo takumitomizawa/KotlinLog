@@ -4,11 +4,12 @@ import android.util.Log
 
 open class Human: Animal, Thinkable {
 
-    // 引数付きコンストラクタ
-    constructor(name: String, age: Int): super(name, age){
-    }
-
     var hobby = "~~"
+
+    // 引数付きコンストラクタ
+    constructor(name: String, age: Int, hobby: String): super(name, age){
+        this.hobby = hobby
+    }
 
     // Animalクラスのメソッドをオーバーライド
     override fun say() {
